@@ -1,0 +1,210 @@
+$yel: #fffbc8;
+*
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+body
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.container
+	margin: 0 auto;
+	width: 95%;	
+header
+	margin-top: 20px;
+	font-size: 0;
+	height: 100%;
+.avatar
+	display: inline-block;
+	height: 120px;
+	min-width: 120px;
+	background-image: url(avatar.png);
+	border-radius: 60px;
+	background-position: 75% 30%;
+	z-index: 100;
+.profi
+	display: inline-block;
+	width: calc(100% - 120px);
+	vertical-align: top;
+	padding-left: 10px;
+	h1
+		font-size: 16pt;
+		margin: 3px 0;
+	h2
+		font-size: 12pt;
+		font-weight: normal;
+		color: #808080;
+		margin: 3px 0;
+	p
+		position: relative;
+		margin: 0;
+		font-size: 14pt;
+		background: $yel;
+		padding: 10px;
+		margin-left: -70px;
+		padding-left: 70px;
+		z-index: -11
+		width: calc(100% + 70px);
+		border: 1px solid #808080;
+.services
+	margin-left: 130px;
+	font-size: 0;
+	h3
+		width: 100%;
+		text-align: right;
+		font-size: 13pt;
+		font-weight: normal;
+	h4
+		display: inline-block;
+		width: 90%;
+		font-size: 16pt;
+	p
+		display: inline-block;
+		width: 10%;
+		font-size: 16pt;
+		text-align: center;	
+.table
+	position: relative;
+	border-top: 1px solid #808080
+	border-bottom: 1px solid #808080;	
+	padding: 15px 0;	
+.lvls
+	display: inline-block;
+	width: 90%;
+	font-size: 13pt;
+.lvl
+	padding: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;		
+	background: #ace2f8;
+	margin-bottom: 2px;
+	p
+		margin: 0;
+		min-width: 220px;
+		text-align: left;
+.max
+	width: 80%;
+	background: #b1e19b;
+.mid
+	width: 40%;
+.min
+	width: 20%;		
+.prop
+	display: inline-block;
+	width: 10%;	
+	font-size: 13pt;
+	text-align: center;
+	p
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 5px;
+		margin-bottom: 2px;
+.reviews
+	h5
+		display: inline-block;
+		font-size: 16pt;
+		margin: 0;
+	a
+		display: inline-block;
+		font-size: 14px;
+		line-height: 28px;
+		color: #005da1
+.like
+	position: absolute;
+	right: 100px;
+	&::before
+		content: '';
+		display: inline-block;
+		margin-right: 10px;
+		background-image: url(like.png);
+		width: 15px;
+		height: 15px;
+.share
+	position: absolute;
+	right: 50px;
+	&::before
+		content: '';
+		display: inline-block;
+		margin-right: 10px;
+		background-image: url(share.png);
+		width: 15px;
+		height: 15px;
+#comment
+	margin-top: 25px;
+	display: block;
+	height: 100%;
+#name
+	display: inline-block;
+	font-size: 14pt;
+	font-weight: bold;
+#data
+	display: inline-block;
+	font-size: 11pt;
+	color: #808080;
+	margin-left: 15px;
+#text
+	font-size: 14pt;
+	padding: 20px;	
+	background: #f2fbff;
+	border: 1px solid #808080;
+	position: relative;
+	margin-top: 15px;
+	z-index: 100;
+	&::before 
+		content: ''
+		z-index: -100;
+		border: 10px solid transparent;
+		border-bottom: 10px solid #808080;
+		position: absolute;
+		left: 20px
+		top: -20px
+	&::after 
+		content: ''
+		z-index: 100;
+		border: 10px solid transparent;
+		border-bottom: 10px solid #f2fbff
+		position: absolute;
+		left: 20px
+		top: -19px
+		z-index: 100;
+footer
+	width: 100%;
+	margin-top: 50px;
+	padding: 30px 0;
+	background: #f2f2f2;
+	position: relative;
+	bottom: 0;
+#com
+	width: 100%;
+	max-width: 100%;
+	min-height: 65px;
+	font-size: 14pt;
+	padding: 15px;	
+#submitt
+	text-decoration: none;
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 25px;
+	padding: 15px;
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+	background: #fdd639;
+	border-radius: 50px
+	cursor: pointer;
+
+
+@media screen and (max-width: 487px)
+	.services
+		margin-left: 0
+	.like,.share
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		right: 0;
+		text-align: right;
+
+			
